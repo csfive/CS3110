@@ -2,3 +2,109 @@
   --vp-font-family-base: '极影毁片文宋', serif;
   --vp-font-family-mono: 'DM Mono', '极影毁片文宋', monospace;
 }
+
+:root {
+  /* Brand Colors - Rich burgundy */
+  --vp-c-brand-1: #8b2252;
+  --vp-c-brand-2: #722f37;
+  --vp-c-brand-3: #5c1a2a;
+  --vp-c-brand-soft: rgba(139, 34, 82, 0.14);
+
+  /* Accent Colors - Sage green */
+  --vp-c-success-1: #8fa86e;
+  --vp-c-success-2: #7a9460;
+  --vp-c-success-3: #6b7f4e;
+  --vp-c-success-soft: rgba(143, 168, 110, 0.14);
+
+  /* Warning Colors - Warm gold */
+  --vp-c-warning-1: #c5975b;
+  --vp-c-warning-2: #b08450;
+  --vp-c-warning-3: #9a7245;
+  --vp-c-warning-soft: rgba(197, 151, 91, 0.14);
+
+  /* Danger Colors - Terra cotta */
+  --vp-c-danger-1: #c44536;
+  --vp-c-danger-2: #b33a2e;
+  --vp-c-danger-3: #a03025;
+  --vp-c-danger-soft: rgba(196, 69, 54, 0.14);
+
+  /* Custom spacing for better readability */
+  --vp-layout-max-width: 1440px;
+}
+
+/* Dark mode specific customizations */
+.dark {
+  /* Brand overrides for dark mode */
+  --vp-c-brand-1: #c75b7a;
+  --vp-c-brand-2: #b04a68;
+  --vp-c-brand-3: #9a3d5a;
+  --vp-c-brand-soft: rgba(199, 91, 122, 0.14);
+
+  /* Enhanced dark mode colors - deeper for contrast */
+  --vp-c-bg: #141010;
+  --vp-c-bg-soft: #1c1614;
+  --vp-c-bg-mute: #261e1a;
+  --vp-c-bg-alt: #181312;
+
+  /* Warm dividers */
+  --vp-c-divider: #3a2e25;
+  --vp-c-divider-light: #4a3d33;
+
+  /* Text colors with warm undertones */
+  --vp-c-text-1: #ede6df;
+  --vp-c-text-2: #c9bfb5;
+  --vp-c-text-3: #9e9288;
+  --vp-c-text-4: #71685e;
+
+  /* Code block enhancements */
+  --vp-code-block-bg: #1f1713;
+  --vp-code-block-divider-color: #3a2e25;
+  --vp-code-copy-code-hover-bg: #3a2e25;
+
+  /* Inline code styling */
+  --vp-c-code-bg: #2d221a;
+  --vp-c-code-color: #c75b7a;
+}
+
+/* Light mode customizations */
+:root:not(.dark) {
+  /* Light mode brand colors */
+  --vp-c-brand-1: #8b2252;
+  --vp-c-brand-2: #722f37;
+  --vp-c-brand-3: #5c1a2a;
+  --vp-c-brand-soft: rgba(139, 34, 82, 0.08);
+
+  /* Adjusted success colors for light mode */
+  --vp-c-success-1: #6b7f4e;
+  --vp-c-success-2: #5a6b40;
+  --vp-c-success-soft: rgba(107, 127, 78, 0.08);
+
+  /* Adjusted warning colors */
+  --vp-c-warning-1: #c5975b;
+  --vp-c-warning-2: #b08450;
+  --vp-c-warning-soft: rgba(197, 151, 91, 0.08);
+
+  /* Cream/warm background colors */
+  --vp-c-bg: #fdf8f3;
+  --vp-c-bg-soft: #f5ede3;
+  --vp-c-bg-mute: #e8ddd0;
+  --vp-c-bg-alt: #f0e6da;
+
+  /* Text colors */
+  --vp-c-text-1: #2a1f1a;
+  --vp-c-text-2: #5a4d42;
+  --vp-c-text-3: #7d7068;
+  --vp-c-text-4: #a09489;
+
+  /* Warm dividers */
+  --vp-c-divider: #d4c8b8;
+  --vp-c-divider-light: #c5b8a5;
+
+  /* Light mode code styling */
+  --vp-c-code-bg: #f0e6da;
+  --vp-c-code-color: #8b2252;
+
+  /* Code blocks in light mode */
+  --vp-code-block-bg: #f5ede3;
+  --vp-code-block-divider-color: #d4c8b8;
+}
