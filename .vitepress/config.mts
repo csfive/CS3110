@@ -1,13 +1,6 @@
 import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 
-const sidebar: DefaultTheme.Sidebar = [
-  {
-    items: [{ text: '00. Installing OCaml', link: '/notes/00' }],
-  },
-]
-
 const configs = {
-  sidebar,
   lang: 'zh-CN',
   title: 'CS3110',
   description: '',
@@ -34,7 +27,20 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/logo.svg',
-    sidebar: configs.sidebar,
+    sidebar: [
+      {
+        text: 'Introduction',
+        items: [
+          { text: '00. Installing OCaml', link: '/notes/00' },
+          { text: '01. Better Programming Through OCaml', link: '/notes/01' },
+          { text: '02. The Basics of OCaml', link: '/notes/02' },
+        ],
+      },
+      {
+        text: 'OCaml Programming',
+        items: [{ text: '03. Data and Types', link: '/notes/03' }],
+      },
+    ],
     socialLinks: [{ icon: 'github', link: `https://github.com/${configs.repo}` }],
     ...getLabel(),
   },
